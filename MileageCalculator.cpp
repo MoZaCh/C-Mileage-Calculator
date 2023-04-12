@@ -1,5 +1,4 @@
 #include "MileageCalculator.h"
-#include <cmath>
 
 /*
 * Mileage Calculator
@@ -10,11 +9,11 @@
 *
 * @return ans - The total cost of fuel for the given values
 */
-double MileageCalculator(int totalMiles, int mpg, double fuelCost)
+double MileageCalculator(double totalMiles, double mpg, double fuelCost)
 {
-	double ans = totalMiles / mpg * 4.54609 * fuelCost / 100;
+	double ans = (totalMiles / mpg * 4.54609 * fuelCost) / 100;
 	double ansRounded = round(ans * 100) / 100;
-	cout << "Fuel Cost: £ " << ans << endl;
+	cout << "Fuel Cost(Pounds) : " << ansRounded << endl;
 
-	return ans;
+	return ansRounded;
 }
