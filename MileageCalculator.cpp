@@ -16,5 +16,5 @@ double MileageCalculator(int totalMiles, int mpg, double fuelCost)
 	double ansRounded = round(ans * 100) / 100;
 	cout << "Fuel Cost: £ " << ans << endl;
 
-	return 0.0;
+	return ans;
 }
