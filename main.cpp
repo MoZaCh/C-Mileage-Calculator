@@ -8,7 +8,7 @@ int main()
     int choice = 0;
     string start, destination;
     double totalMiles, mpg, fuelCost, ans;
-    bool quit = false;
+    bool quit = false; //Flag set to false for the while loop
 
     do 
     {
@@ -30,11 +30,11 @@ int main()
             cout << "Enter fuel cost (Decimal): " << endl;
             cin >> fuelCost;
             cout << start << " to " << destination << endl;
-            ans = MileageCalculator(totalMiles, mpg, fuelCost);
+            ans = MileageCalculator(totalMiles, mpg, fuelCost); //Mileage calculator function call with given arguments
             break;
 
         case 2:
-            quit = true;
+            quit = true; //Setting the flag to true so the while loop can terminate
         }
 
     } while (!quit);
