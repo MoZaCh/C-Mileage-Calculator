@@ -1,5 +1,4 @@
 #include "MileageCalculator.h"
-#include <cmath>
 
 /*
 * Mileage Calculator
