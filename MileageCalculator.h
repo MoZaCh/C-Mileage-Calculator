@@ -3,4 +3,4 @@
 
 using namespace std;
 
-double MileageCalculator(int, int, double);
+double MileageCalculator(double, double, double);
